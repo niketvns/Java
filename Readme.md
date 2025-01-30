@@ -74,14 +74,12 @@ In Java, a **variable** is a named storage location in memory used to hold data 
 
      ```java
      int age; // Declaration
-
      ```
 
    - **Initialization**: Assign a value to the variable.
 
      ```java
      age = 25; // Initialization
-
      ```
 
    - Can be done in one line:
@@ -184,10 +182,13 @@ In Java, data types define the type of data a variable can hold. Java has two ma
 
 1. Integer
 
-   > int - 4 bytes →
-   > byte - 1 bytes → Range (-2^7 to 2^7 -1)
-   > short - 2 bytes
-   > long - 8 bytes
+   > int - 4 bytes → -2,147,483,648 to 2,147,483,647 (-2^31 to 2^31 - 1)
+
+   > byte - 1 bytes → -128 to 127 (-2^7 to 2^7 - 1)
+
+   > short - 2 bytes -> -32,768 to 32,767 (-2^15 to 2^15 - 1)
+
+   > long - 8 bytes -> -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 (-2^63 to 2^63 - 1)
 
    ```java
    int a = 43242;
@@ -198,18 +199,20 @@ In Java, data types define the type of data a variable can hold. Java has two ma
 
 2. Float
 
-   > float - 4 bytes
-   > double - 8 bytes
+   > float - 4 bytes -> Approximately ±3.4 × 10^38
 
-   ```java
-   // In Java, For float we need to use 'f' at the end of number because by default every decimal value is double in java.
-   float f = 5.8f;
-   double d = 5.8;
-   ```
+   > double - 8 bytes -> Approximately ±1.8 × 10^308
+
+```java
+// In Java, For float we need to use 'f' at the end of number because by default every decimal value is double in java.
+float f = 5.8f;
+double d = 5.8;
+```
 
 3. Character
 
-   > char - 2 byte
+   > char - 2 byte -> 0 to 65,535 (Unicode characters)
+
    > Java follow UNICODE instead of ASCII value
 
    ```java
@@ -219,7 +222,7 @@ In Java, data types define the type of data a variable can hold. Java has two ma
 
 4. Boolean
 
-   > boolean → true/false
+   > boolean - 1byte -> true/false
 
    ```java
    boolean b = true;
