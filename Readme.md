@@ -9,7 +9,7 @@ Java makes writing, compiling, and debugging programming easy. It helps to creat
 
 ## How Java Works?
 
-![How Java Works](image.png)
+![How Java Works](/assets/image.png)
 
 Here’s a structured summary of "How Java Works" based on notes:
 
