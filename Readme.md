@@ -229,3 +229,127 @@ double d = 5.8;
    ```
 
 ## 2. Non-Primitive (Reference) Data Types
+
+<!-- To be continued -->
+
+# **Literal in Java**
+
+A **literal** in Java is a fixed value assigned to a variable directly in the code. It represents constant values that do not change during execution.
+
+## **Types of Literals in Java**
+
+### **1. Integer Literals** (Whole Numbers)
+
+- Default type: `int`
+- Can be specified in **decimal (base 10), binary (base 2), octal (base 8), or hexadecimal (base 16)**
+
+| **Format**                     | **Example**                          |
+| ------------------------------ | ------------------------------------ |
+| **Decimal** (Base 10)          | `int x = 100;`                       |
+| **Binary** (Prefix: `0b`)      | `int bin = 0b1010; // 10 in decimal` |
+| **Octal** (Prefix: `0`)        | `int oct = 012; // 10 in decimal`    |
+| **Hexadecimal** (Prefix: `0x`) | `int hex = 0xA; // 10 in decimal`    |
+
+### Example:
+
+```java
+public class IntegerLiterals {
+    public static void main(String[] args) {
+        int decimal = 100;
+        int binary = 0b1010;
+        int octal = 012;
+        int hex = 0xA;
+
+        System.out.println("Decimal: " + decimal);
+        System.out.println("Binary: " + binary);
+        System.out.println("Octal: " + octal);
+        System.out.println("Hexadecimal: " + hex);
+    }
+}
+```
+
+---
+
+### **2. Floating-Point Literals** (Decimal Numbers)
+
+- Default type: `double`
+- Use **`f` or `F`** for `float` values
+
+| **Example**            | **Description**                |
+| ---------------------- | ------------------------------ |
+| `double pi = 3.14159;` | Default floating-point literal |
+| `float f = 3.14f;`     | Explicitly defining a float    |
+
+---
+
+### **3. Character Literals**
+
+- A **single character** enclosed in **single quotes (`'` `')**
+- Can be a **Unicode character**
+
+| **Example**                | **Description**           |
+| -------------------------- | ------------------------- |
+| `char ch = 'A';`           | Single character          |
+| `char unicode = '\u0041';` | Unicode character for 'A' |
+
+---
+
+### **4. String Literals**
+
+- A **sequence of characters** enclosed in **double quotes (`"` `")**
+
+| **Example**                     | **Description** |
+| ------------------------------- | --------------- |
+| `String text = "Hello, Java!";` | Standard string |
+| `String empty = "";`            | Empty string    |
+
+---
+
+### **5. Boolean Literals**
+
+- Only **two possible values:** `true` or `false`
+
+| **Example**                 | **Description** |
+| --------------------------- | --------------- |
+| `boolean isJavaFun = true;` | Boolean true    |
+| `boolean isCold = false;`   | Boolean false   |
+
+---
+
+### **6. Null Literal**
+
+- Represents an **empty object reference**
+
+| **Example**          | **Description**        |
+| -------------------- | ---------------------- |
+| `String str = null;` | String with null value |
+
+---
+
+### **7. Underscore in Numeric Literals (Java 7+)**
+
+- **Improves readability** for large numbers
+
+| **Example**                | **Equivalent To** |
+| -------------------------- | ----------------- |
+| `int million = 1_000_000;` | `1000000`         |
+| `double pi = 3.14_159;`    | `3.14159`         |
+
+---
+
+### **Summary Table: Java Literals**
+
+| **Literal Type**           | **Example**              |
+| -------------------------- | ------------------------ |
+| **Integer Literal**        | `int num = 100;`         |
+| **Floating-Point Literal** | `double pi = 3.14;`      |
+| **Character Literal**      | `char letter = 'A';`     |
+| **String Literal**         | `String text = "Java";`  |
+| **Boolean Literal**        | `boolean isTrue = true;` |
+| **Null Literal**           | `String name = null;`    |
+
+---
+
+### **Conclusion**
+
+Literals in Java are **fixed values** used in programs. They include **numbers, characters, strings, and booleans**, making Java code more readable and efficient.
