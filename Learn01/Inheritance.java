@@ -17,6 +17,12 @@ class AdvCalc extends Calc {
     public int div(int n1, int n2) {
         return n1 / n2;
     }
+
+    // We can override a method in child class
+    @Override
+    public int sub(int n1, int n2) {
+        return n1 - n2 - 1;
+    }
 }
 
 public class Inheritance {
